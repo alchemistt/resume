@@ -1,0 +1,63 @@
+body{
+
+}
+ .row
+ {
+   margin: auto;
+ }
+.conatiner
+{
+  margin-left: 5%;
+  margin-top: 3%;
+}
+.photo
+{
+  height: auto;
+  display: inline;
+  height: 150px;
+}
+.headings
+{
+  color: #387BBA;
+}
+.indentation
+{
+  margin-left:15px;
+}
+li
+{
+  margin-left: 1em;
+  padding-left:1.5em ;
+}
+.certidetails
+{
+  margin-left: 1em;
+  margin-bottom: 0rem;
+  padding-left:1.5em;
+  color: #A6A6A6;
+  size :13.333px;
+}
+tr
+{
+padding-bottom: 2em;
+
+}
+.o
+{
+  color: #FEA47F;
+}
+.sub
+{
+  font-size: 10px;
+  margin-bottom: .2rem;
+}
+.discription
+{
+
+  color: #A6A6A6;
+}
+.last
+{
+  text-align: right;
+  padding-right:  2%;
+}
