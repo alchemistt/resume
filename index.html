@@ -21,7 +21,7 @@
         <div class="photo col-sm">
           <img src="profile.jpeg" class="rounded-circle" alt="profile" height="150px" >
         </div><!-- photo end -->
-
+        
       </div><!-- row 1 end -->
       <div class="row"></div>
       <br>
@@ -192,8 +192,29 @@
 </div>
 <br>
 <h4 class="last">- Tushar Budhiraja</h4>
-    </div><!-- conatiner end -->
+     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+              </div><!-- conatiner end -->
+    <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
