@@ -1,5 +1,6 @@
 mybutton = document.getElementById("myBtn");
 
+
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() { scrollFunction() };
 
@@ -9,6 +10,33 @@ function scrollFunction() {
     } else {
         mybutton.style.display = "none";
     }
+}
+
+function toggle(i) {
+
+    var burger = document.getElementById("togglebuttonburger");
+    var close = document.getElementById("togglebuttonclose");
+
+    if (i == 1) {
+        console.log(false);
+        burger.style.display = "none";
+
+        close.style.display = "block";
+
+        console.log(elmnt);
+
+
+    } else {
+
+        close.style.display = "none";
+        burger.style.display = "block";
+
+
+        console.log(true);
+
+
+    }
+
 }
 
 // When the user clicks on the button, scroll to the top of the document

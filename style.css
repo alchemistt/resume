@@ -7,6 +7,7 @@
     .conatiner {
         margin-left: 5%;
         margin-top: 3%;
+        /* padding-top: 100px; */
     }
     
     .photo {
@@ -103,6 +104,7 @@
         border: 1px #555;
         outline: none;
         background-color: white;
+        /* background-color: rgb(143, 240, 199); */
         color: white;
         cursor: pointer;
         /* border-radius: 10px;
@@ -130,4 +132,12 @@
     .fab {
         height: 10px;
         /* color: blue; */
+    }
+    
+    #togglebuttonburger {
+        display: block;
+    }
+    
+    #togglebuttonclose {
+        display: none;
     }
