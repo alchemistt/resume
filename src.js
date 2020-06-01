@@ -46,7 +46,9 @@ function topFunction() {
 }
 
 
-function skillsetgit() {
+function skillset() {
     var elmnt = document.getElementById("skillset");
+    console.log("element" + elmnt);
+
     elmnt.scrollIntoView();
 }
