@@ -16,18 +16,19 @@ function toggle(i) {
 
     var burger = document.getElementById("togglebuttonburger");
     var close = document.getElementById("togglebuttonclose");
+    var conatiner = document.getElementById("conatiner");
 
     if (i == 1) {
         console.log(false);
         burger.style.display = "none";
-
+        conatiner.style.paddingTop = "155px"
         close.style.display = "block";
 
-        console.log(elmnt);
+        // console.log(elmnt);
 
 
     } else {
-
+        conatiner.style.paddingTop = "50px"
         close.style.display = "none";
         burger.style.display = "block";
 
@@ -39,16 +40,15 @@ function toggle(i) {
 
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 
 
 function skillset() {
     var elmnt = document.getElementById("skillset");
     console.log("element" + elmnt);
-
+    document.body.scrollTop = 0;
     elmnt.scrollIntoView();
 }

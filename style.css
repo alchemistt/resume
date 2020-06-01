@@ -7,7 +7,7 @@
     .conatiner {
         margin-left: 5%;
         margin-top: 3%;
-        /* padding-top: 100px; */
+        padding-top: 50px;
     }
     
     .photo {
@@ -140,4 +140,8 @@
     
     #togglebuttonclose {
         display: none;
+    }
+    
+    .navbar {
+        /* position: relative; */
     }
