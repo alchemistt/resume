@@ -47,8 +47,62 @@ function topFunction() {
 
 
 function skillset() {
-    var elmnt = document.getElementById("skillset");
-    console.log("element" + elmnt);
-    document.body.scrollTop = 0;
-    elmnt.scrollIntoView();
+    // var elmnt = document.getElementById("skillset");
+    // console.log("element" + elmnt);
+    // document.body.scrollTop = 0;
+    // elmnt.scrollIntoView();
+
+    console.log(window.scrollY);
+    var w = window.innerWidth;
 }
+window.onload = function() {
+
+    var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        title: {
+            // text: "Desktop Search Engine Market Share - 2016"
+        },
+        data: [{
+            type: "pie",
+            startAngle: 240,
+            yValueFormatString: "##0.00\"%\"",
+            indexLabel: "{label} {y}",
+            dataPoints: [
+                { y: 22.45, label: "HTML" },
+                { y: 23.31, label: "CSS" },
+                { y: 16.06, label: "Bootstrap" },
+                { y: 20.91, label: "JavaScript " },
+                { y: 16.26, label: "PHP" },
+                { y: 10.26, label: "Angular " },
+                { y: 18.26, label: "API " },
+
+                { y: 1.26, label: "Angular " }
+
+                // HTML, CSS, JS, Bootstrap 
+
+            ]
+        }]
+    });
+    chart.render();
+}
+window.addEventListener('scroll', function() {
+    var body = document.body,
+        html = document.documentElement;
+
+    var height = Math.max(body.scrollHeight, body.offsetHeight,
+        html.clientHeight, html.scrollHeight, html.offsetHeight);
+    // var w = window.innerWidth;
+
+    progress = ((window.pageYOffset / height) * 100);
+    document.getElementById('pageprogress').style.width = (progress) + "%"
+
+    if (progress > 45) {
+        document.getElementById('pageprogress').style.width = (progress + 15) + "%"
+    }
+    if (progress > 70) {
+        document.getElementById('pageprogress').style.width = (progress + 30) + "%"
+    }
+    console.log(progress);
+
+
+});
