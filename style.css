@@ -178,3 +178,12 @@
         .toggle {
             padding-top: 5px;
         }
+        
+        #new {
+            display: none;
+        }
+        
+        .badge {
+            color: green;
+            background-color: gray;
+        }

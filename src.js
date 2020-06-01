@@ -95,7 +95,9 @@ window.addEventListener('scroll', function() {
 
     progress = ((window.pageYOffset / height) * 100);
     document.getElementById('pageprogress').style.width = (progress) + "%"
-
+    if (progress > 17) {
+        tablechange();
+    }
     if (progress > 45) {
         document.getElementById('pageprogress').style.width = (progress + 15) + "%"
     }
@@ -106,3 +108,12 @@ window.addEventListener('scroll', function() {
 
 
 });
+
+function tablechange() {
+
+    var old = document.getElementById("old");
+    var neww = document.getElementById("new");
+    neww.style.display = "block"
+    old.style.display = "none"
+
+}
