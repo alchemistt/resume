@@ -55,7 +55,8 @@ function skillset() {
     console.log(window.scrollY);
     var w = window.innerWidth;
 }
-window.onload = function() {
+// window.onload = 
+function graph() {
 
     var chart = new CanvasJS.Chart("chartContainer", {
         animationEnabled: true,
@@ -65,8 +66,8 @@ window.onload = function() {
         data: [{
             type: "pie",
             startAngle: 240,
-            yValueFormatString: "##0.00\"%\"",
-            indexLabel: "{label} {y}",
+            // yValueFormatString: "##0.00\"%\"",
+            // indexLabel: "{label} {y}",
             dataPoints: [
                 { y: 22.45, label: "HTML" },
                 { y: 23.31, label: "CSS" },
@@ -76,7 +77,6 @@ window.onload = function() {
                 { y: 10.26, label: "Angular " },
                 { y: 18.26, label: "API " },
 
-                { y: 1.26, label: "Angular " }
 
                 // HTML, CSS, JS, Bootstrap 
 
@@ -95,8 +95,9 @@ window.addEventListener('scroll', function() {
 
     progress = ((window.pageYOffset / height) * 100);
     document.getElementById('pageprogress').style.width = (progress) + "%"
-    if (progress > 17) {
+    if (progress > 17 && progress < 22) {
         tablechange();
+        graph();
     }
     if (progress > 45) {
         document.getElementById('pageprogress').style.width = (progress + 15) + "%"
