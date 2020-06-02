@@ -21,14 +21,14 @@ function toggle(i) {
     if (i == 1) {
         console.log(false);
         burger.style.display = "none";
-        conatiner.style.paddingTop = "155px"
+        conatiner.style.paddingTop = "200px"
         close.style.display = "block";
 
         // console.log(elmnt);
 
 
     } else {
-        conatiner.style.paddingTop = "50px"
+        conatiner.style.paddingTop = "100px"
         close.style.display = "none";
         burger.style.display = "block";
 
