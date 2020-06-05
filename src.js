@@ -1,3 +1,19 @@
+var head = document.getElementsByTagName('head')[0];
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js";
+
+// Then bind the event to the callback function.
+// There are several events for cross browser compatibility.
+script.onreadystatechange = handler;
+script.onload = handler;
+
+// Fire the loading
+head.appendChild(script);
+
+function handler() {
+    console.log('jquery added :)');
+}
 mybutton = document.getElementById("myBtn");
 
 
@@ -95,9 +111,11 @@ window.addEventListener('scroll', function() {
 
     progress = ((window.pageYOffset / height) * 100);
     document.getElementById('pageprogress').style.width = (progress) + "%"
-    if (progress > 17 && progress < 22) {
+    if (progress > 17 && progress < 19) {
         tablechange();
         graph();
+
+
     }
     if (progress > 45) {
         document.getElementById('pageprogress').style.width = (progress + 15) + "%"
@@ -105,7 +123,7 @@ window.addEventListener('scroll', function() {
     if (progress > 70) {
         document.getElementById('pageprogress').style.width = (progress + 30) + "%"
     }
-    console.log(progress);
+    // console.log(progress);
 
 
 });
@@ -114,7 +132,26 @@ function tablechange() {
 
     var old = document.getElementById("old");
     var neww = document.getElementById("new");
+
+    if (neww.style.display != "block") {
+        bar();
+    }
     neww.style.display = "block"
     old.style.display = "none"
 
+}
+
+function bar() {
+    $(".python").animate({
+        width: "70%"
+    }, 2500);
+    $(".php").animate({
+        width: "75%"
+    }, 3000);
+    $(".java").animate({
+        width: "80%"
+    }, 3500);
+    $(".c").animate({
+        width: "60%"
+    }, 1500);
 }
