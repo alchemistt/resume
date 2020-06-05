@@ -10,7 +10,7 @@ body {
     font-family: "Times New Roman", Times, serif;
     margin-left: 5%;
     margin-top: 3%;
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 .progress {
@@ -206,4 +206,9 @@ ul {
 .progress.active .progress-bar {
     -webkit-transition: none !important;
     transition: none !important;
+}
+
+.navbar-toggler {
+    margin-top: -5%;
+    margin-bottom: -3%;
 }
