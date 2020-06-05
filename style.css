@@ -213,3 +213,9 @@ ul {
     margin-bottom: -3%;
     padding-bottom: 0%;
 }
+
+.progress {
+    height: 18px;
+    padding: auto;
+    padding-left: 0%;
+}
