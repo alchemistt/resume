@@ -209,6 +209,7 @@ ul {
 }
 
 .navbar-toggler {
-    margin-top: -5%;
+    margin-top: -2%;
     margin-bottom: -3%;
+    padding-bottom: 0%;
 }
