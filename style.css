@@ -172,6 +172,7 @@ tr {
     height: 10px;
     color: aqua;
     background-color: aqua;
+    margin: -10px;
 }
 
 .toggle {
