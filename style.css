@@ -159,7 +159,7 @@ tr {
 }
 
 .bartop {
-    padding-top: 95px;
+    padding-top: 0px;
     position: inherit;
     width: 100%;
     height: 0px;
@@ -208,11 +208,12 @@ ul {
     transition: none !important;
 }
 
-.navbar-toggler {
+
+/* .navbar-toggler {
     margin-top: -2%;
     margin-bottom: -3%;
     padding-bottom: 0%;
-}
+} */
 
 .progress {
     height: 18px;
