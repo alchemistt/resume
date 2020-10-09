@@ -1,339 +1,844 @@
-<!doctype html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
-    <title>Tushar Budhiraja</title>
-</head>
+    <!-- End Google Tag Manager -->
 
-<body>
-    <!-- <nav class=" bar fixed-top nav">
-        <a class="navbar-brand" href="#">Fixed top</a>
-    </nav>  -->
-    <!-- <nav class=" fixed-top "> -->
-    
-    
-
-    <nav class="navbar-toggler row fixed-top navbar-default navbar navbar-expand-sm navbar-dark bg-dark ">
+    <!-- Materialize - Compiled and minified CSS-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+    <!-- Font Awesome Icon - CSS-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>Tushar Budhiraja | Software Developer</title>
 
 
-        <a class="navbar-brand " href="https://www.linkedin.com/in/alchemisttushar/"><i class="fab fa-linkedin fa-2x"></i></a>
 
-        <a class="navbar-brand  " href="https://github.com/alchemistt"><i class="fab fa-github-square fa-2x"></i></a>
-        <button id="togglebuttonburger" onclick="toggle(1)" class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><i id="a" class="fa fa-hamburger"></i></button>
-        <button id="togglebuttonclose" onclick="toggle(2)" class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-window-close"></i></i></button>
+    <!-- Open Graph-->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Varad Bhogayata | Software Developer" />
+    <meta property="og:description" content="Software Developer" />
+    <meta property="og:url" content="https://varadbhogayata.github.io/" />
+    <meta property="og:site_name" content="Varad Bhogayata | Software Developer" />
+    <meta property="article:publisher" content="https://varadbhogayata.github.io/" />
+    <meta property="og:image" content="https://varadbhogayata.github.io/examples/preview.JPG" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@varad_bhogayata" />
+    <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
+    <meta name="twitter:description" content="Software Developer" />
+    <meta name="twitter:url" content="https://twitter.com/varad_bhogayata" />
+    <meta name="author" content="Varad Bhogayata" />
+    <meta name="description" content="Software Developer with a passion for backend development and artificial intelligence." />
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 
-        <div class="navbar-brand col-sm-4">
-            <div id="pageprogress" class="progress-bar  progress-bar-success  progress-bar-animated  " role="progressbar" style="width: 0%;" aria-valuemax="100"></div>
-        </div>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
 
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="skillset()" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
-                    </div>
-                </li>
-            </ul>
+    <!-- Navigation Menu-->
+    <!-- Nav class 1 -->
+    <nav class="hide-on-small-only">
+        <ul class="side-nav fixed section table-of-contents">
 
-        </div>
-        <br>
+            <li class="logo">
+                <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo grey-blue-text">
+                    <img src="/assets/img/profile.jpeg" class="circle img-responsive profile-pic" alt="avatar">
+                </a>
+            </li>
 
+            <li class="bold">
+                <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+            </li>
 
+            <li class="bold">
+                <!-- mdi-av-web small
+             mdi-av-my-library-books small-->
+                <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+            </li>
+
+            <li class="bold">
+                <!--
+        ICONS:
+        mdi-action-assessment
+        mdi-social-poll
+        mdi-av-equalizer
+        -->
+                <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+
+            </li>
+            <li class="bold">
+                <!-- mdi-av-web small
+             mdi-av-my-library-books small-->
+                <a aria-label="Navigate to the certifications section" href="#certifications" class="waves-effect waves-dark teal-text"><i class="fa fa-university small" aria-hidden="true"></i>
+          <span>Certifications</span></a>
+            </li>
+
+            <li class="bold">
+                <!--
+        ICONS:
+        -->
+                <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+            </li>
+
+            <li class="bold">
+                <!-- 
+        1. mdi-communication-contacts
+        2. mdi-content-mail
+        3. mdi-communication-email
+        -->
+                <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+            </li>
+
+            <li class="bold">
+                <!--
+        ICONS:
+        1. mdi-action-description
+        2. mdi-file-folder
+        3. mdi-file-folder-open
+        4. mdi-file-attachment
+        5. mdi-file-folder-shared
+        -->
+                <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
+          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
+                <a aria-label="Open Varad's resume in a new tab" href="https://www.docdroid.net/l9b7MaQ/tushar-budhiraja-letex-resume-initial-commit-pdf" target="_blank" class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+            </li>
+        </ul>
     </nav>
 
+    <!-- Nav class 2 -->
+    <nav class="hide-on-large only trigger z-depth-1">
+        <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <div class="name-title">
+            <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Tushar Budhiraja</a><span class="black-text">Software Developer</span>
+        </div>
+    </nav>
 
+    <!-- Nav class 3 -->
+    <nav class="hide-on-large only">
+        <ul id="slide-out" class="side-nav">
+            <li class="bold">
+                <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+            </li>
 
+            <li class="bold">
+                <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Open Varad's Resume in a new tab" href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank" class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+            </li>
+        </ul>
+    </nav>
 
+    <!-- Main Content-->
+    <main>
+        <!-- First Section: Heading lines and image -->
+        <section id="intro" class="section scrollspy full-height">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="col-md-9">
+                    <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+                        <div class="caption">
+                            <h2>Namaste, I'm <span class="teal">Tushar&nbsp; Budhiraja.</span></h2>
+                            <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#E17360"></span></h5>
+                            <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
+                            <h5>Self-driven,smart working, passionate programmer with a curious mind who loves solving a challenging real-world problems.</h5>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/alchemisttushar/" target="_blank">
+                                <button class="icon-btn linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </button>
+                            </a>
+                            <a href="https://github.com/alchemistt" target="_blank">
+                                <button class="icon-btn github">
+                  <i class="fa fa-github"></i>
+                </button>
+                            </a>
 
-    <div onscroll="myFunction()" class="conatiner" id="conatiner">
+                            <a href="https://www.instagram.com/the__alchemistt" target="_blank">
+                                <button class="icon-btn instagram">
+                  <i class="fa fa-instagram"></i>
+                </button>
+                            </a>
 
-        <div class="row 1">
+                            <!-- <a href="http://linkedin.com/in/varadbhogayata" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
 
-            <div class="name info col-sm-8" style="padding-left: 0px;">
-                <h1>Tushar Budhiraja</h1>
-                <p class="indentation">
-
-                    <a name="" id="" class="btn" href="https://www.google.com/maps/place/Indirapuram,+Ghaziabad,+Uttar+Pradesh/@28.6493434,77.3346064,13z/data=!3m1!4b1!4m5!3m4!1s0x390cfabbae31843d:0xf5857c74104528f7!8m2!3d28.6460176!4d77.3695166" role="button">
-                        <i class="fa fa-map-pin"></i> </a>
-                    <t class="t">Ghaziabad , Uttar Pradesh, India</t> <br>
-                    <a name="" id="" class="btn" href="mailto:TUSHARBUDHIRAJA01@GMAIL.COM" role="button"><i class="fa fa-envelope"></i></a> tusharbudhiraja01@gmail.com</p>
-
+                  </span>
+              </a> -->
+                        </div>
+                        <div class='buttons'>
+                            <a href="#about" class="readme">Read More</a>
+                            <a href="#contact" class="contactme">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="photo col-sm">
-                <img src="profile.jpeg" class="rounded-circle" alt="profile" height="150px">
+        </section>
+
+        <!-- Second Section: About -->
+        <section id="about" class="section scrollspy">
+            <h3 class="page-title white-text teal">About</h3>
+            <div class="container flow-text">
+                <!-- <blockquote>
+          <h2>
+            A Software Developer with a passion for Backend Development and Artificial Intelligence.
+
+          </h2>
+        </blockquote> -->
+                <p>
+
+                    I have experience of back-end development using JAVA, Python and PHP (laravel & CI). I have developed various RESTful Web Applications using Spring MVC. I also hold a good hand on experience of Angular and JS. My skill bucket also includes Node, ML, Hibernat
+                    e and Unix .
+                    <!-- Detail-oriented Software Engineer with a get-it-done, on-time, and high-quality product spirit and a keen interest in Software Development and Artificial Intelligence. -->
+                </p>
+                <p>
+                    Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.
+                </p>
+                <!-- <p>
+          Another Paragraph
+        </p>  -->
+                <!-- <p>
+        <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
+          href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
+          aria-label="Navigate to the Full Stack React homepage"
+          href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
+          aria-label='Navigate to the article "Scalable CSS"'
+          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
+        </p> -->
             </div>
-            <!-- photo end -->
+        </section>
 
-        </div>
-        <!-- row 1 end -->
-        <div class="row"></div>
-        <br>
-        <div class="row">
-            <h4 class="headings">Trainings and certifications</h4>
-        </div>
-        <div class="row">
-            <ul>
-                <li class="cetificate"><i class="fas fa-medal"></i>Data Structures and Algorithms Using Python</li>
-                <p class="certidetails">Issued on –May,2018 <br> Issued by –National Programme on Technology Enhanced Learning</p>
 
-                <li class="cetificate"><i class="fas fa-medal"></i>Introduction to Machine Learning</li>
-                <p class="certidetails">Issued on –Nov,2018 <br> Issued by –National Programme on Technology Enhanced Learning</p>
-                <li class="cetificate"><i class="fas fa-medal"></i>Design and Analysis of Algorithm</li>
-                <p class="certidetails">Issued on –Nov,2018 <br> Issued by –National Programme on Technology Enhanced Learning</p>
-                <li class="cetificate"><i class="fas fa-medal"></i>Social Network</li>
-                <p class="certidetails">Issued on –May,2019 <br> Issued by –National Programme on Technology Enhanced Learning</p>
-            </ul>
-        </div>
-        <div id="skillset" class="row">
-            <h4 class="headings">Skill set</h4>
-        </div>
-        <div class="row">
+        <!-- Third Section: Experience -->
+        <section id="experience" class="section scrollspy">
+            <h3 class="page-title white-text teal">Experience</h3>
+            <div class="container">
 
-            <div class="col-sm-12">
-                <table class="table table-borderless">
-                    <tr>
-                        <th>Programming and scripting <br>languages</th>
+                <!-- Latest Experience -->
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s12 m2">
+                                <a href="https://www.nagarro.com" target="_blank"><img alt="nagarro logo" src="/assets/img/nagarro logo.png" class="responsive-img nagarro center-block" /></a>
+                            </div>
+                            <!-- <div class="col s12 m10"> -->
+                            <div class="col s12 m10">
+                                <p>
+                                    <span class="card-title"><a href="http://nagarro.com" target="_blank"
+                      class="teal-text hoverline">Nagarro</a></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="role brown-text text-darken-2">Associate Developer</div>
+                        <ul>
+                            <li>
+                                Worked on various projects and technology.
+                            </li>
+                            <li>
+                                Cretated RESTful WebApps using Spring MVC framework with Angular based front-end.
+                            </li>
+                            <li>
+                                Integrated various 3rd party sdk for data analytics, JS library for Data visulization.
 
-                        <td>
-                            <div class="row" id='new'>
-                                <div class="col-sm-3"><i class="fab pro fa-python"> </i>Python</div>
-                                <div class="progress col-sm-8">
-                                    <div id='python' class="progress-bar python progress-bar-striped progress-bar-animated  bg-info" role="progressbar" style="width:0%" aria-valuemax="100"><i class="fab pro fa-python"> 80% </i></div>
-                                </div>
-                                <br>
-                                <div class="col-sm-3"><i class="fab pro fa-php"></i>PHP
-                                </div>
-                                <div class="progress col-sm-8">
-                                    <div id='php' class="progress-bar php progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%" aria-valuemax="100"><i class="fab fa-php">75%</i></div>
-                                </div>
-                                <br>
-                                <div class="col-sm-3"><i class="fab pro fa-java"></i>Java
-                                </div>
-                                <div class="progress col-sm-8">
-                                    <div id='java' class="progress-bar java progress-bar-striped progress-bar-animated  bg-info" role="progressbar" style="width: 0%" aria-valuemax="100"><i class="fab fa-java">80%</i></div>
-                                </div>
-                                <br>
-                                <div class="col-sm-3"><i class="fab pro fa-cuttlefish"></i>C
-                                </div>
-                                <div class="progress col-sm-8">
-                                    <div id='c' class="progress-bar c progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0" aria-valuemax="100"><i class="fab fa-cuttlefish">60%</i></div>
-                                </div>
+                            </li>
+                            <li>Designed and developed a Travel Approval Portal RESTful application that keep tracks of project travel requests and their Approval stauts along with WUHAN Virus (aka COVID 19) data visualization of destination city - from scratch.</li>
+                            <li>
+                                <b>Tools:</b> Java, Hibernate, MySQL, Angular.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <span>Jan 2020 - Current | Gurgaon, India</span>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s12 m2">
+                                <a href="https://www.efusionsoft.com/" target="_blank"><img alt="Mtag logo" src="/assets/img/efst.png" class="responsive-img center-block" /></a>
 
                             </div>
-                            <!-- <p id='old'>Python, php, C, Java</p> -->
-                            <!-- <ul class="list-group">
-                                <li class="list-group-item">c <span class="badge">45</span></li>
 
-                            </ul> -->
-                            <div id='old' class="container">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Python <span class="badge">70</span></li>
-                                    <li class="list-group-item">php <span class="badge">75</span></li>
-                                    <li class="list-group-item">Java <span class="badge">80</span></li>
-                                    <li class="list-group-item">C <span class="badge">60</span></li>
+                            <!-- <div class="col s12 m10"> -->
+                            <div class="col s12 m10">
+                                <p>
+                                    <span class="card-title"><a href="https://www.efusionsoft.com/" target="_blank"
+                      class="teal-text hoverline">E-Fusionsoft Technologies </a></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="role brown-text text-darken-2">Software Engineer Intern</div>
+                        <ul>
+                            <li>
+                                Designed and developed Interview Tracking System web portal from scratch.
+                            </li>
+                            <li>
+                                Desgined the Database Architecture and REST API for mobile app
+                            </li>
+                            <li>
+                                <b>Tools:</b> MySQL, Laravel, JS, xampp
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <span>June 2019 - Aug 2020 | Noida, India</span>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <!-- <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://www.cignex.com" target="_blank"><img alt="Cignex logo"
+                    src="/assets/img/exp-cignex-logo.png" class="responsive-img center-block" /></a>
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.cignex.com" target="_blank"
+                      class="teal-text hoverline">CIGNEX
+                      Datamatics </a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Project Trainee</div>
+            <ul>
+              <li>
+                Designed a library management system for a local library, where we undertook activities like requirement
+                elicitation, preparing Data Flow
+                and Entity-Relationship diagrams.
+              </li>
+              <li>
+                Delivered a solution for a POC involving Automatic Financial Document Classifier using Natural Language
+                Processing and Support Vector
+                Machines with 96% accuracy on the company’s data.
+              </li>
+              <li>
+                <b>Tools:</b> Python, Scikit-learn, NLTK
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>June 2017 - July 2017 | Ahmedabad, India</span>
+          </div>
+        </div> -->
+
+            </div>
+        </section>
+
+        <!-- Fourth Section: Projects -->
+        <section id="projects" class="section scrollspy">
+            <h3 class="page-title white-text teal">Projects</h3>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col s12 m6 l6">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Travel Approval Portal" src="/assets/img/travelportal.png" style="height: 100%; width: 100%" class="activator" />
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Travel Approval Portal<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                                <p>
+                                    A Travel Approval Portal based on SpringMVC and Angular.
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <!-- TODO: change this -- only close button -->
+                                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                                <ul>
+                                    <li><b>Tools:</b> SpringMVC, Angular, Hibernate, Java, MySQL, Canvas.JS, RESTful API </li>
+                                    <li>Register/login to the web app for both users and Admins via OTP mail. </li>
+                                    <li>Search and filter travel request based on priority and destination.</li>
+                                    <li>Request approval and denial -mail notification.</li>
+                                    <li>Show WUHAN virus(aka COVID 19) status of destination.</li>
+
+
+                                </ul>
+                                <!-- <div class="card-action">
+                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/music-player"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l6">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Interview Tracking System" src="/assets/img/interviewtrackingsystem.png" style="height: 100%; width: 100%" class="activator" />
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Interview Tracking System<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                                <p>
+                                    A Interview Tracking System web app based on Laravel
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <!-- TODO: change this -- only close button -->
+                                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                                <ul>
+                                    <li><b>Tools:</b> Laravel, HTML, CSS, Bootstrap, MySQL, Xampp</li>
+                                    <li>Search and filter candidates based on Skills, CTC and experience.</li>
+                                    <li>Update the canditate status as per stituation like scheduled,shortlisted </li>
+                                    <li>Created REST API for mobile app as well</li>
+
+                                </ul>
+                                <!-- <div class="card-action">
+                  <a aria-label="Visit " href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/QuizUp"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 1. Django Project -->
+                    <!-- <div class="col s12 m6 l6">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="django web app" src="/assets/img/project-library-logo.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Local Library Web-App<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A web-app that creates an online catalog for a small local library, where users can browse available books and manage their accounts.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> HTML, CSS, Bootstrap, SQLite, Django, Heroku</li>
+                  <li>Users can view list and detail information for books and authors.</li>
+                  <li>Admin users can create and manage models.</li>
+                  <li>Librarians can renew reserved books.</li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://django-local-lib.herokuapp.com" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/django-local-library"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+                    <!-- Flask Project -->
+                    <div class="col s12 m6 l6">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Anti-malware system" src="/assets/img/antimalware.png" style="height: 100%; width: 100%" class="activator" />
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Malware Detection using Deep Learning<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                                <p>
+                                    Malware detection using Image processing and classification with DL.
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <!-- TODO: change this -- only close button -->
+                                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                                <span class="card-title teal-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                                <ul>
+                                    <li><b>Tools:</b>Python, Kivy, Pytorch </li>
+                                    <li>Users can select a file and check does that file contain malware or not?</li>
+                                    <li>Use image classification for detection</li>
+                                    <li>File -> Grey Scale Image -> Model ->Output</li>
+                                    <li>used kivy to create the UI of the Desktop Application</li>
+                                </ul>
+                                <!-- <div class="card-action">
+                  <a aria-label="Visit Blog website" href="https://flask-heroku-blog.herokuapp.com/" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/flask-blog"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VQA -->
+                    <div class="col s12 m6 l6">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Flight search" src="/assets/img/flightsear.png" style="height: 100%; width: 100%" class="activator" />
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Flight Search<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                                <p>
+                                    Java Application that use multithreading for flight Search in multiple CSV flies
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <!-- TODO: change this -- only close button -->
+                                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                                <span class="card-title teal-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                                <ul>
+                                    <li><b>Tools:</b>Java</li>
+
+                                    <li>Console base app that make flight search faster using multithreading</li>
+                                    <li>Show the detail and other mandatory flight data</li>
+                                    <li>Use multithreading to check if a new CSV file is added to directory.</li>
+                                    <li>use multithreading to read multiple files simultanously</li>
+
+                                </ul>
+                                <!-- <div class="card-action">
+                  <a aria-label="Visit the GitHub repo for  project"
+                    href="https://github.com/varadbhogayata/visual-question-answering" target="_blank"
+                    data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Image Generator -->
+
+
+                    <!-- ************* -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Fifth Section: Skills -->
+        <section id="skills" class="section scrollspy">
+            <h3 class="page-title white-text teal">Skills</h3>
+            <div class="container">
+                <!-- Languages and Databases -->
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">Languages and Databases</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/python-logo-1-300x300.jpg" class="responsive-img" /> <br>Python
+                            </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/java.png" class="responsive-img" /><br> Java
+                            </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/php.svg" class="responsive-img" />php
+                            </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" /><br>MySQL
+                            </div>
+
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/shell-logo-1-300x300.jpg" class="responsive-img" /><br> Shell
+                            </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/c.webp" class="responsive-img" /><br> C Language
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">Libraries</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/numpy-logo-1-500x500.jpg" class="responsive-img" /> <br>NumPy
+                            </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/pandas-logo-2-500x500.jpg" class="responsive-img" />Pandas
+                            </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/matplotlib-logo-1-500x500.jpg" class="responsive-img" />matplotlib
+                            </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/hibernate.jpg" class="responsive-img" />Hibernate
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">Frameworks</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/spring.png" class="responsive-img" />Django
+                            </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/laravel.png" style="height: 50px;" class="responsive-img" />Laravel
+                            </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/bootstrap.png" style="height: 50px;" class="responsive-img" /><br> Bootstrap
+                            </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/ci.png" class="responsive-img" style="height: 50px;" /><br> CodeIgnitor
+                            </div>
+                            <!-- <div class="col s4 m2">
+                <img alt="" src="/assets/img/tensorflow-logo-1.png" class="responsive-img" />TensorFlow
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/pytorch-logo.png" class="responsive-img" />PyTorch
+              </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other -->
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">Other</h4>
+                        <div class="row text-center">
+
+
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/git.png" class="responsive-img" /><br>Git
+                            </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/trello.webp" class="responsive-img" /><br>Trello
+                            </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/heroku.png" class="responsive-img" />Heroku
+                            </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="/assets/img/canva.png" style="height: 500px;" class="responsive-img" /><br>Canva
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- certifications -->
+        </div>
+        <section id="certifications" class="section scrollspy">
+            <h3 class="page-title white-text teal">Certificates</h3>
+            <div class="container">
+                <div class="row">
+
+                    <div class="card col s12 m5 l5">
+
+                        <div class="card-body" style="padding: 3%;">
+                            <h5 style="color: brown;">Programming, Data Structures and Algorithms using Python</h5>
+                            <p class="card-text">Jan-Apr 2019 <br> Issued by –NPTEL</p>
+                            <a href="https://i.ibb.co/gw8dWRX/Programming-Data-Structures-and-Algorithms-using-Python-1.jpg" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                    <div class="col m2 l2">&nbsp;</div>
+                    <div class="card col s12 m5 l5">
+
+                        <div class="card-body" style="padding: 3%;">
+                            <h5 style="color: brown;">Introduction to Machine Learning</h5>
+                            <p class="card-text">Aug-Oct 2018 <br> Issued by –NPTEL</p>
+                            <a href="https://i.ibb.co/hHMSYXN/Introduction-to-Machine-Learning-1.jpg" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="row">
+
+
+
+                    <div class="card col s12 m5 l5">
+
+                        <div class="card-body" style="padding: 3%;">
+                            <h5 style="color: brown;">Social networks</h5>
+                            <p class="card-text">Feb-Mar 2018<br> Issued by –NPTEL</p>
+                            <a href="https://i.ibb.co/JnRrps6/Social-networks-1.jpg" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                    <div class="col m2 l2">&nbsp;</div>
+                    <div class="card col s12 m5 l5">
+
+                        <div class="card-body" style="padding: 3%;">
+                            <h5 style="color: brown;">Design and Analysis of Algorithms</h5>
+                            <p class="card-text">Aug-Oct 2018<br> Issued by –NPTEL</p>
+                            <a href="https://i.ibb.co/Lrn626y/Design-and-Analysis-of-Algorithms-1.jpg" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contianer -->
+
+        </section>
+
+
+
+        <!-- Seventh Section: Education -->
+        <section id="education" class="section scrollspy">
+            <h3 class="page-title white-text teal">Education</h3>
+            <div class="container">
+                <div class="row">
+                    <!-- Education -->
+                    <div class="col s12 m7">
+                        <div class="card">
+                            <div class="card-content">
+                                <p>
+                                    <span class="card-title"><a href="https://aktu.ac.in/" class="teal-text hoverline">Dr. A.P.J. Abdul Kalam Technical University</a></span>
+                                </p>
+                                <p class="brown-text">Lucknow, India</p>
+                                <p>
+                                    <b>Degree: </b>Bachelor of Technology in Computer Science & Engineering
+                                    <br>
+                                    <b>Division:</b> I-DIV HONS
+                                    <br>
+                                    <b>CGPA: </b>7.62/10
+                                </p>
+
+                                <ul>
+                                    <p>
+                                        <b>Relevant Courseworks:</b>
+                                        <ul>
+                                            <li>Data Structures and Algorithms</li>
+                                            <li>Database Management Systems</li>
+                                            <li>Operating Systems</li>
+                                            <li>Artificial Intelligence</li>
+                                            <li>Computer Networks</li>
+                                        </ul>
+                                    </p>
+
                                 </ul>
                             </div>
-
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <th>Frameworks and <br>Web Technologies</th>
-                        <td>
-                            <div id="chartContainer" style="height: 200px; width: 100%; ">
-
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Servers and platforms</th>
-                        <td><img src="data:image/png;base64,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"
-                                style="width: 30px;height: 30px;" alt="">Xampp <br> <img src="data:image/png;base64,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"
-                                style="width: 30px;height: 30px;" alt="">Anaconda <br>
-                            <img src="https://www.globetesting.com/wp-content/uploads/2019/01/logoeclipse2.png" style="width: 30px;height: 30px;" alt=""> Eclipse <br>
-                            <img src="http://img.pngio.com/apache-tomcat-apache-http-server-vulnerability-computer-software-tomcat-png-900_500.jpg" style="width: 30px;height: 30px;" alt=""> Tomcat
-
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <th>Databases and BI</th>
-                        <td> MySQL </td>
-
-                    </tr>
-                    <tr>
-                        <th>Devices and OS</th>
-                        <td>Debian Linux, MacOS, Window </td>
-                    </tr>
-
-                </table>
-            </div>
-            <div class="col-sm-1 ">&nbsp;</div>
-        </div>
-        <div class="row ">
-            <h4 class="headings ">Internships</h4>
-        </div>
-        <div class="row indentation ">
-            <h5 class="o ">Software Developer Intern </h5>
-        </div>
-        <p class="indentation ">At E-FusionSoft Technologies pvt.ltd. Worked on various web technologies in order to develop an Interview Tracker System.</p>
-        <div class="row ">
-            <h4 class="headings ">Education</h4>
-        </div>
-        <div class="indentation ">
-            <h5 class="o " style="margin-bottom: 0.2rem " ;>B.-Tech(Computer Science and Engineering)</h5>
-            Mahatma Gandhi Mission's College Of Engineering & Technology (AKTU)
-            <p class="sub ">2016 – 2020 <br> Courses:- Pursuing B.-Tech from AKTU with the aggregate CGPA of 7.5(till 7th semester)</p>
-        </div>
-        <br>
-        <div class="indentation ">
-            <h5 class="o " style="margin-bottom: 0.2rem " ;>Senior Secondary</h5>
-            Sarvodaya Vidyalaya, Jor Bagh
-            <p class="sub ">2016 <br> Courses:- Senior Secondary from C.B.S.E. board withan aggregate of 75%</p>
-        </div><br>
-        <div class="indentation ">
-            <h5 class="o " style="margin-bottom: 0.2rem ">Higher Secondary</h5>
-            Vidhan Public School
-            <p class="sub ">2016 <br> Courses:- Senior Secondary from C.B.S.E. board withan aggregate of 75%</p>
-        </div>
-        <br>
-        <div class>
-            <h4 class="headings ">Achievements</h4>
-            <ul>
-                <li>Appointedas the Chairman at Student Chapter for ISTE (IndianSociety for Technical Education).</li>
-                <li>Appointed as the Head of T&P coordination cell of MGMCOET.</li>
-                <li>Won a zonal level Quiz “Bharat ko Janno”</li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h4 class="headings ">Recent projects</h4>
-            <br>
-
-            <div>
-                <h6 class="o indentation ">Interview Tracking System</h6>
-
-                <div class="row ">
-                    <div class="col-sm-10 ">
-                        <table class="table table-bordered indentation ">
-                            <tr>
-                                <th>Client</th>
-                                <td class="discription ">“Client is a web development and app development company with the strength of less 50 employees.”</td>
-                            </tr>
-                            <tr>
-                                <th>Duration</th>
-                                <td class="discription ">June, 2019 -July, 2019</td>
-                            </tr>
-                            <tr>
-                                <th>Project overview</th>
-                                <td class="discription ">“Project involved the development of web-based interview candidate tracking system. It provided web- based plan management, automated revision records.”</td>
-                            </tr>
-                            <tr>
-                                <th>Technologies</th>
-                                <td class="discription ">Bootstrap, CorePHP, HTML, CSS, JavaScript </td>
-                            </tr>
-                        </table>
-
-                    </div>
-                    <br>
-                    <div>
-                        <h6 class="o indentation ">Anti-Malware based Deep Learning</h6>
-
-                        <div class="row ">
-                            <div class="col-sm-10 ">
-                                <table class="table table-bordered indentation ">
-                                    <tr>
-                                        <th>Client</th>
-                                        <td class="discription ">“College final year project”</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Duration</th>
-                                        <td class="discription "> Aug 2019-Jun 2020</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Project overview</th>
-                                        <td class="discription ">“Development of Malware system that use image classification approach for identifying the file containing malware”</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Technologies</th>
-                                        <td class="discription ">Python, Pytorch, Kivy </td>
-                                    </tr>
-                                </table>
-
-                            </div><br>
-                            <div>
-                                <h6 class="o indentation ">Regressions test value generator</h6>
-
-                                <div class="row ">
-                                    <div class="col-sm-10 ">
-                                        <table class="table table-bordered indentation ">
-                                            <tr>
-                                                <th>Client</th>
-                                                <td class="discription ">“College project”</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Duration</th>
-                                                <td class="discription "> Aug 2019-Dec 2019</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Project overview</th>
-                                                <td class="discription ">“Regression test case generator on the bases of the entered functionality and parameters of the functionality”</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Technologies</th>
-                                                <td class="discription ">Bootstrap, Core PHP, HTML, CSS, JavaScript
-
-                                                </td>
-
-                                            </tr>
-                                        </table>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <button onclick="topFunction() " id="myBtn " class="bhtml " title="Go to top ">Top <i class="fa fa-long-arrow-up "></i></button>
-                            <button onclick="topFunction()" id="myBtn" class="bhtml" title="Go to top">Top <i class="fa fa-long-arrow-up"></i></button>
                         </div>
-                        <!-- <i  id="topBtn " class="fa fa-heart "></i> -->
-
-                        <br>
-
-                        <h4> Thank You</h4>
-
                     </div>
-                    <!-- conatiner end -->
+                </div>
+            </div>
+        </section>
 
-                    <!-- Optional JavaScript -->
-                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script> -->
+        <!-- Eight Section: Contact -->
+        <section id="contact" class="section scrollspy full-height">
+            <h3 class="page-title white-text teal">Contact</h3>
+            <div class="container">
+                <p>
+                    <a aria-label="Call Varad" data-position="top" data-tooltip="Call Varad" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
+              aria-label="Call Varad">+919311XXX964</a></a>
+                </p>
+                <p>
+                    <a aria-label="Email Varad" href="mailto:Tusharbudhiraja01@gmail.com" target="_blank" data-position="top" data-tooltip="Email Varad" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-envelope"></i><a aria-label="Email Varad" href="mailto:Tusharbudhiraja01@gmail.com"
+              class="hoverline">Tusharbudhiraja01@gmail.com</a></a>
+                </p>
+                <p>
+                    <a aria-label="View Varad on GitHub" href="http://github.com/alchemistt" target="_blank" data-position="top" data-tooltip="View Varad on GitHub" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+              aria-label="Varad on Github" href="http://github.com/alchemistt" class="hoverline"
+              target="_blank">github.com/alchemistt</a></a>
+                </p>
+                <p>
+                    <a aria-label="View Varad on LinkedIn" href="http://linkedin.com/in/alchemisttushar" target="_blank" data-position="top" data-tooltip="View Varad on LinkedIn" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-linkedin"></i><a aria-label="Varad on LinkedIn" href="http://linkedin.com/in/alchemisttushar"
+              class="hoverline" target="_blank">linkedin.com/in/alchemisttushar</a></a>
+                </p>
+            </div>
+        </section>
+    </main>
 
-                    <script type="text/javascript " src="src.js ">
-                    </script>
-                    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-                    <script src="https://kit.fontawesome.com/db09a8d7a9.js " crossorigin="anonymous "></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
-                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
-                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
-</body>
+    <!-- typed.js -->
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script type="text/javascript">
+        var typed = new Typed('.typing', {
+            strings: ["Software Developer", "Associate Engineer at Nagarro", "Triangulor-ian", "Pythonista"],
+            loop: true,
+            typeSpeed: 80,
+            backSpeed: 40
+        });
+    </script>
 
-</html>
 
-</html>
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Materialize - Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <script>
+        // Materialize - Initializers
+        $(document).ready(function() {
+            $(".scrollspy").scrollSpy()
+                // Initialize collapse button
+            $(".button-collapse").sideNav({
+                menuWidth: 190, // Default is 240
+                edge: "left", // Choose the horizontal origin
+                closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            })
+        })
+    </script>
+    </body>
+
+    </html
