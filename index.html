@@ -117,6 +117,7 @@
             class="mdi-content-mail small"></i><span>Contact</span></a>
             </li>
 
+
             <li class="bold">
                 <!--
         ICONS:
@@ -126,10 +127,21 @@
         4. mdi-file-attachment
         5. mdi-file-folder-shared
         -->
-                <!-- <a aria-label="Open Tushar's resume in a new tab" href="#resume" target="_blank"
-          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
+        <a aria-label="Navigate to the resume section" href="https://drive.google.com/file/d/12taz4zgNIsUWmMy06rY9M2eizUlSa8Nx/view?usp=sharing" target="_blank" class="waves-effect waves-dark teal-text"  class="waves-effect waves-dark teal-text"><i
+            class="mdi-file-folder-shared small"></i><span>Resume</span></a>
+            <!-- <iframe id="pdfViewer" src="assets/TusharBudhiraja_Java_3years_India-1-1.pdf"></iframe> -->
+        <!-- <a aria-label="Open Tushar's resume in a new tab" href="#resume" target="_blank"
+           onclick="window.open('https://drive.google.com/file/d/12taz4zgNIsUWmMy06rY9M2eizUlSa8Nx/view?usp=sharing')"
           class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-                <a aria-label="Open Tushar's resume in a new tab" href="https://www.docdroid.net/l9b7MaQ/tushar-budhiraja-letex-resume-initial-commit-pdf" target="_blank" class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+                <!-- <a aria-label="Open Tushar's resume in a new tab" href=""><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
+
+                <!-- <button id="openPdfButton">Open PDF</button>
+    
+                        The popup container -->
+                        <!-- <div id="pdfPopup" class="popup">
+                            <span class="close" id="closePdfPopup">&times;</span>
+                            <iframe id="pdfViewer" src="assets/TusharBudhiraja_Java_3years_India-1-1.pdf"></iframe>
+                         </div>  -->
             </li>
         </ul>
     </nav>
@@ -171,7 +183,7 @@
             class="mdi-content-mail small"></i><span>Contact</span></a>
             </li>
             <li class="bold">
-                <a aria-label="Open Tushar's Resume in a new tab" href="https://www.docdroid.net/l9b7MaQ/tushar-budhiraja-pdf" target="_blank" class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+                <a aria-label="Open Tushar's Resume in a new tab" href="https://drive.google.com/file/d/12taz4zgNIsUWmMy06rY9M2eizUlSa8Nx/view?usp=sharing" target="_blank" class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
             </li>
         </ul>
     </nav>
@@ -220,6 +232,8 @@
                             <a href="#about" class="readme">Read More</a>
                             <a href="#contact" class="contactme">Contact Me</a>
                         </div>
+                        
+                    
                     </div>
                 </div>
             </div>
@@ -930,7 +944,30 @@
                 closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
             })
         })
+        // Get the elements
+const openPdfButton = document.getElementById('openPdfButton');
+const pdfPopup = document.getElementById('pdfPopup');
+const closePdfPopup = document.getElementById('closePdfPopup');
+
+// Open the PDF popup when the button is clicked
+openPdfButton.addEventListener('click', function() {
+    pdfPopup.style.display = 'block';
+});
+
+// Close the PDF popup when the close button is clicked
+closePdfPopup.addEventListener('click', function() {
+    pdfPopup.style.display = 'none';
+});
+
+// Close the PDF popup if the user clicks outside of it
+window.addEventListener('click', function(event) {
+    if (event.target === pdfPopup) {
+        pdfPopup.style.display = 'none';
+    }
+});
+
     </script>
+
     </body>
 
 </html>
